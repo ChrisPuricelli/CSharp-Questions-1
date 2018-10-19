@@ -4,9 +4,11 @@ Repository holding the questions and answers for the same assignment
 
 1. Q: What is a namespace?
 - A namespace essentially seems like a container for programs. It holds all the variables, methods, etc. within it, and doesn't allow another namespace to use the variables defined within it. From tutorialspoint, "The class names declared in one namespace does not conflict with the same class names declared in another." However, it's possible to call a method/use a variable from one namespace in a different namespace.
-    [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm "Tutorialspoint - Namespaces")
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm "Tutorialspoint - Namespaces")
+
 2. Q: What are value types?
--Value types are basically variables that are created which when utilized/called will provide an actual value rather than output a location in memory. For instance, an integer (int) type variable is a value type because when it's called it will output the value it currently holds.
+- Value types are basically variables that are created which when utilized/called will provide an actual value rather than output a location in memory. For instance, an integer (int) type variable is a value type because when it's called it will output the value it currently holds.
+- [Tutorialspoint](https://www.tutorialspoint.com/Value-Type-vs-Reference-Type-in-Chash "Value Types Vs. Reference Types")
     
 3. Q: What are reference types?
 4. Q: What is an automatic property and how is it useful?
