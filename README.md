@@ -2,19 +2,19 @@
 Repository holding the questions and answers for the same assignment
 ***
 
-1. Q: What is a namespace?
+1. Q: What is a **namespace**?
 - A namespace essentially seems like a container for programs. It holds all the variables, methods, etc. within it, and doesn't allow another namespace to use the variables defined within it. From tutorialspoint, "The class names declared in one namespace does not conflict with the same class names declared in another." However, it's possible to call a method/use a variable from one namespace in a different namespace.
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm "Namespaces")
 
-2. Q: What are value types?
+2. Q: What are **value types**?
 - Value types are basically variables that are created which when utilized/called will provide an actual value rather than output a location in memory. For instance, an integer (int) type variable is a value type because when it's called it will output the value it currently holds. When it's intially created the system will set aside memory intended for the value that's going to be stored.
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_data_types.htm "C# Data Types")
 
-3. Q: What are reference types?
+3. Q: What are **reference types**?
 - Reference types are different from value types in that they store the location of something in memory. If a variable or method causes the value at that location to change, then when the reference variable is called it will display the change as well since it's basically "pointing" to that spot in memory.
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_data_types.htm "C# Data Types")
 
-4. Q: What is an automatic property and how is it useful?
+4. Q: What is an **automatic property** and how is it useful?
 - When initializing a new object, automatic (auto-implemented?) properties will set the initial values for that object - but with simpler code.
 - [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties "Auto-Implemented Properties")
 
@@ -22,7 +22,7 @@ Repository holding the questions and answers for the same assignment
 - It predefines what the resource being used can do, and once the resource reaches the end of its range it is automatically released. This is helpful as it will help avoid memory leaks from forgetting to free memory.
 - [Stack Overflow](https://stackoverflow.com/questions/75401/what-are-the-uses-of-using-in-c-sharp "Uses of 'Using' in C#")
 
-6. Q: What are dynamic type variables?
+6. Q: What are **dynamic type** variables?
 - Dynamic variables can store any data type, and the computer checks what type is being used after the program has compiled.
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_data_types.htm "C# Data Types")
 
@@ -31,8 +31,8 @@ Repository holding the questions and answers for the same assignment
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_operators.htm "C# Operators")
 
 8. Q: What are **generics** and how is using them useful?
-... - With generics you can basically create a dynamic class, one that can use any data type - until it's first used. Once it becomes a data type it turns into that data type, and can't constantly change around.
-  - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_generics.htm "C# Generics")
+- With generics you can basically create a dynamic class, one that can use any data type - until it's first used. Once it becomes a data type it turns into that data type, and can't constantly change around.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_generics.htm "C# Generics")
 
 9. Q: What is the **scope** of a public member of a class?
 - If something is declared as "public" can be used throughout the entire project. Public opens it up to be used by anything capable of calling it/using it's value/location.
@@ -43,6 +43,9 @@ Repository holding the questions and answers for the same assignment
 - [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/params "Params Keyword")
 
 11. Q: How do you **sort an array**?
+- There's a method within C# that sorts arrays basically by pre-specifying the way you wish to sort the array, and then it sets a base value for that array, after doing that it compares future values to that and if a new one is preferable to the current held value, then it replaces the held value with the new value until another is even more preferable.
+- [CSharp Examples](http://www.csharp-examples.net/sort-array/ "Sort-Array")
+
 12. Q: What is a **nullable type** and what purpose does it serve?
 - A nullable type is any that is capable of storing the standard set of values along with the null value. This is important as it also allows the use of "true" and "false" values as well, which broadens the uses for the variable.
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_nullables.htm "C# Nullables")
@@ -73,13 +76,40 @@ Repository holding the questions and answers for the same assignment
 - [Tutorialspoint](https://www.tutorialspoint.com/Classes-vs-Structures-in-Chash "Classes Vs. Structures")
 
 19. Q: What is the difference between **continue** and **break** statements?
+- The break statement completely ends the loop and tells the program to move to the next line in the program. 
+- The continue statement, on the other hand, tells the program to finish that specific loop, but then it forces it to go to the next increment of the loop skipping anything else that may have been leftover in the previous one.
+- [Tutorialspoint](https://www.tutorialspoint.com/What-is-the-difference-between-break-and-continue-statements-in-Chash "Break Vs. Continue Statements")
+
 20. Q: What is **this** and how is it used?
+- The "this" keyword is used when trying to use something in the current instance of the class you're using. For instance if you're creating an object that's intended to be a car you would assign it's color with this.color and that would assign a color to the current car you're creating/using.
+- [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/this "This")
+
 21. Q: What is **try** and **catch** and when are they used?
+- The "try" keyword is implemented at a spot in your code where you expect to have an error. It's typically followed by at least one "catch" block of code.
+- The "catch" keyword is placed at the spot where the exception is expected to occur, and then outputs a message indicating that the exeception was actually caught. 
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm "Exception Handling")
+
 22. Q: How is **exception handling** done?
+- Exception handling is done through the use of the "try," "catch," "finally," and "throw" blocks. When there's an error that occurs in a block of code a try/catch is put there to catch it. Whether or not an exception is caught a finally block carries out it's code. I assume this is intended to help find the exact location and identify what kind of exception occurs in order to fix it.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm "Exception Handling")
+
 23. Q: What is **finally** and what is its purpose?
+- A "finally" block of code is one that will always execute no matter if an exception occurs or not. This keyword follows both the "try" and "catch" blocks. For instance if a file was opened, occurred somewhere while it was opened, the finally block would close the file either way in order to avoid memory leak.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm "Exception Handling")
+
 24. Q: List the differences between **Array** and **ArrayList**.
+- An array is a strong-typed collection in which you would use a specific data type. An array list on the other hand is more flexible and a weaker-typed collection, and ArrayList can store values of any type inside it. Furthermore, an array is/can be multi-dimensional, whereas an ArrayList is single dimension. You would use an ArrayList when you aren't sure about how large the array will get, or in the event you're using multiple types of data.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_arraylist.htm "C# ArrayList Class")
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_arrays.htm "C# Arrays")
+
 25. Q: What is an **object**?
+- An object is something that is created when a class is implemented. Basically, the class lays out what is supposed to be made and what it can do, then it creates an object using that information which follows those parameters.
+- [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/objects "Objects")
+
 26. Q: Define **constructor**.
+- Whenever an instance/object is first created, it calls a constructor that initializes types for that object. Basically it builds the base model of that object that can then be altered later in the program. A constructor is also called the same thing as the class, and each class can only have one. I believe the constructor is used every time a new object is created using that class.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_classes.htm "C# Classes")
+
 27. Q: When can **var** be used to declare a variable and how is the type for the variable determined?
 28. Q: What is an **abstract class**?
 29. Q: What is an **interface**?
