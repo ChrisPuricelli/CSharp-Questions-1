@@ -4,16 +4,36 @@ Repository holding the questions and answers for the same assignment
 
 1. Q: What is a namespace?
 - A namespace essentially seems like a container for programs. It holds all the variables, methods, etc. within it, and doesn't allow another namespace to use the variables defined within it. From tutorialspoint, "The class names declared in one namespace does not conflict with the same class names declared in another." However, it's possible to call a method/use a variable from one namespace in a different namespace.
-- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm "Tutorialspoint - Namespaces")
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_namespaces.htm "Namespaces")
 
 2. Q: What are value types?
-- Value types are basically variables that are created which when utilized/called will provide an actual value rather than output a location in memory. For instance, an integer (int) type variable is a value type because when it's called it will output the value it currently holds.
-- [Tutorialspoint](https://www.tutorialspoint.com/Value-Type-vs-Reference-Type-in-Chash "Value Types Vs. Reference Types")
-    
+- Value types are basically variables that are created which when utilized/called will provide an actual value rather than output a location in memory. For instance, an integer (int) type variable is a value type because when it's called it will output the value it currently holds. When it's intially created the system will set aside memory intended for the value that's going to be stored.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_data_types.htm "C# Data Types")
+
 3. Q: What are reference types?
+- Reference types are different from value types in that they store the location of something in memory. If a variable or method causes the value at that location to change, then when the reference variable is called it will display the change as well since it's basically "pointing" to that spot in memory.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_data_types.htm "C# Data Types")
+
+
+
+
+
 4. Q: What is an automatic property and how is it useful?
+- When initializing a new object, automatic (auto-implemented?) properties will set the initial values for that object - but with simpler code.
+- [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties "Auto-Implemented Properties")
+
+
+
+
+
 5. Q: What is the purpose of using statement?
+- It predefines what the resource being used can do, and once the resource reaches the end of its range it is automatically released. This is helpful as it will help avoid memory leaks from forgetting to free memory.
+- [Stack Overflow](https://stackoverflow.com/questions/75401/what-are-the-uses-of-using-in-c-sharp "Uses of 'Using' in C#")
+
 6. Q: What are dynamic type variables?
+- Dynamic variables can store any data type, and the computer checks what type is being used after the program has compiled.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_data_types.htm "C# Data Types")
+
 7. Q: What is the purpose of the is operator?
 8. Q: What are generics and how is using them useful?
 9. Q: What is the scope of a public member of a class?
@@ -23,7 +43,7 @@ Repository holding the questions and answers for the same assignment
 13. Q: What is an enumeration?
 14. Q: What is inheritance?
 15. Q: Is multiple inheritance supported?
-16. Q: What is the purpose of as operator
+16. Q: What is the purpose of as operator?
 17. Q: What is an object?
 18. Q: What is the difference between a struct and a class?
 19. Q: What is the difference between continue and break statements?
