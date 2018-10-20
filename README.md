@@ -111,11 +111,42 @@ Repository holding the questions and answers for the same assignment
 - [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_classes.htm "C# Classes")
 
 27. Q: When can **var** be used to declare a variable and how is the type for the variable determined?
+- Var is a strongly typed variable like others, but isn't really specific until after the program is compiled. For instance if you declare a variable called age as var and set it to five, after the program is compiled the var will basically be as if an integer was declared (because it was). Var is more useful, from what it seems, when being used in a varible that might handle several types of data. However, if it's only passed an array containing strings, then there's no point using var as you might as well use the "char" data type.
+- [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var "Var")
+
 28. Q: What is an **abstract class**?
+- An abstract class is a special class that is designed to force a certain level of organization in the project. It can only be inherited from, so it has to be the first class, and then sub-classes branch from it. Unlike an interface, an abstract class can have constructors. Abstract classes can also extend, and content in an abstract class can contain abstract or concrete information. Other classes can inherit a base class, and then also use the interfaces within that base class I believe.
+- [Docs.Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract "Abstract")
+
 29. Q: What is an **interface**?
+- Unlike with inheritance, a class can utilize multiple interfaces. Interfaces remain the same size after being created. Anything that runs an interface must also run everything within that interface. I think this is how interfaces don't actually implement anything themselves.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_interfaces.htm "C# Interfaces")
+
 30. Q: What is a **method**?
+- These are the blocks of code that "do" things. Main is the primary method that's used in every program. Methods are where the program is carried out.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_methods.htm "C# Methods")
+
 31. Q: What is a **property**?
+- This is basically a named "field" within a class, struct, or interface that use accessors which are contained in private fields that gather and assign the information for that property.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_properties.htm "C# Properties")
+
 32. Q: What is an **access specifier**?
+- Basically it controls what the variable or class can be seen/used by. For instance, a public specifier can be used by anything within the program.
+- [Tutorialspoint](https://www.tutorialspoint.com/Access-Modifiers-in-Chash "Access Modifiers")
+
 33. Q: What access specifiers are supported and what do they mean?
+- Public, protected, internal, protected internal, and private are the specifiers supported
+- Public has no restrictions on what can see it or use it
+- Protected can only be used by classes that inherit the protected class
+- Internal can only be used by the method/class that created it - I'm not too clear on this specifier
+- Protected internal is basically a combination of both the protected and internal specifiers, seems redundant
+- Private can only be used by that class it was declared in
+- [Tutorialspoint](https://www.tutorialspoint.com/Access-Modifiers-in-Chash "Access Modifiers")
+
 34. Q: What is a **collection**?
+- These are special indexed classes that are capable of storing dynamic sizes of data and utilizing them at later points in the program. They are used in things such as stacks, queues, and hash tables. Collections seems to be the foundation for object classes as it can store several separate objects within it which then creates an object class.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_collections.htm "C# Collections")
+
 35. Q: What is a **Hash Table**?
+- A list, or collection, of stored and paired values. For instance you may store names in a class - in this case each name would be assigned to a different "key" specifying that specific name. From what I can tell, the table can then be referenced using either the names or the keys since they're paired together.
+- [Tutorialspoint](https://www.tutorialspoint.com/csharp/csharp_hashtable.htm "C# Hashtable Class")
